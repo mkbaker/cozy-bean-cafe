@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        liver: "#5C4033",
+        champagne: "#F5E6CC",
+        darkSlateGray: "#2F4F4F",
+        tan: "#C5A880",
+        oldRose: "#C78283",
       },
     },
   },
