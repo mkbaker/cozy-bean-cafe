@@ -7,14 +7,14 @@ import CallToAction from "@/components/home/CallToAction";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col gap-6">
       <Hero />
       <Welcome />
       <FeaturedMenu />
-      <div className="w-full flex flex-row justify-between">
+      <div className="w-full flex flex-row flex-wrap gap-6 justify-between">
         <VisitUs />
         <CallToAction />
       </div>
-    </>
+    </div>
   );
 }

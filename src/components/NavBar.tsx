@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="w-full sticky top-0 bg-champagne  px-6 py-4 flex justify-between items-center">
+    <nav className="w-full sticky top-0 z-50 shadow-md bg-champagne  px-6 py-4 flex justify-between items-center">
       <Link
         href="/"
         className={`${homemadeApple.className} text-2xl font-bold text-liver hover:text-oldRose transition`}
