@@ -13,9 +13,9 @@ export default function CallToAction() {
       </p>
       <Link
         href="/order"
-        className="inline-block mt-4 text-white bg-tan px-4 py-2 rounded-lg hover:bg-liver transition"
+        className="inline-block mt-4 text-white bg-tan px-4 py-2 rounded-lg hover:bg-liver transition float-right"
       >
-        Order Ahead
+        order ahead
       </Link>
     </section>
   );

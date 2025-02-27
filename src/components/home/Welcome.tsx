@@ -14,24 +14,23 @@ export default function Welcome() {
   }, []);
 
   return (
-    <section className="relative w-full flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 px-6 py-12">
-      <div
-        className="relative w-full md:w-1/2 max-w-md md:max-w-lg overflow-hidden"
-        style={{ transform: `translateY(${offset}px)` }}
-      >
-        <Image
-          src="/barista-portrait.jpg"
-          alt="Barista smiling"
-          width={600}
-          height={1200}
-          className="w-full h-auto object-cover rounded-2xl shadow-lg"
-        />
+    <section className="relative w-full flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12 px-6 pt-12">
+      <div className="relative w-full md:w-1/2 flex justify-center md:justify-start">
+        <div
+          className="absolute inset-0  opacity-30 md:opacity-100 md:relative w-full md:w-auto h-full min-h-[400px]"
+          style={{ transform: `translateY(-${offset}px)` }}
+        >
+          <Image
+            src="/barista-portrait.jpg"
+            alt="Barista smiling"
+            width={600}
+            height={1200}
+            className="w-full md:w-auto max-w-md md:max-w-lg h-full object-cover rounded-2xl shadow-lg"
+          />
+        </div>
       </div>
 
-      <div
-        className="relative md:absolute md:right-10 bg-white/80 md:bg-white/60 backdrop-blur-lg p-6 md:p-10 rounded-xl shadow-lg max-w-lg"
-        style={{ transform: `translateY(-${offset * 0.2}px)` }}
-      >
+      <div className="relative bg-white/90 md:bg-white/70 backdrop-blur-lg p-6 md:p-10 rounded-xl shadow-lg w-full md:w-1/2 text-center md:text-left">
         <h2
           className={`${homemadeApple.className} text-3xl sm:text-4xl text-liver`}
           style={{ lineHeight: "1.5em" }}
